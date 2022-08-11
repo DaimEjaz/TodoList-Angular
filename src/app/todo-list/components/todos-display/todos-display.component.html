@@ -1,0 +1,7 @@
+<div *ngIf="todos.length >= 1" class="todo-details">
+    <h2>ToDo's List: </h2>
+    <div class="todo-item" *ngFor="let item of todos">
+        <h4>Title: {{item.title}}</h4>
+        <p>Description: {{item.description}}</p>
+    </div>
+</div>
